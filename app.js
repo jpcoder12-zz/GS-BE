@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('This is the Search page.')
+  res.render('search')
 })
 app.get('/results', (req, res) => {
   res.send('This is the Results page.')
