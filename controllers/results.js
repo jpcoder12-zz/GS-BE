@@ -69,8 +69,8 @@ let data = [
     }
 ]
 const getDatafromSearch = (srchInput, data) => {
-    // for each element in the data, split the words in the title (to turn into arr) and search if it includes the search input
-  let results = data.filter(elem => elem.title.toLowerCase().includes(srchInput.toLowerCase()))
+// for each element in the data, split the words in the title (to turn into arr) and search if it includes the search input
+  let results = (srchInput == '*') ? data : data.filter(elem => elem.title.toLowerCase().includes(srchInput.toLowerCase()))
   return results
 }
 
