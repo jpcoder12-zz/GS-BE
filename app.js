@@ -41,9 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 // )
 
 // Routes
-app.get('/', (req, res) => {
-  res.render('search')
-})
+app.use('/', require('./controllers/search'))
 app.get('/results', (req, res) => {
   res.render('results')
 })
