@@ -52,10 +52,16 @@ let data = [
             ]
     }
 ]
+const getDatafromSearch = (srchInput, data) => {
+    // for each element in the data, split the words in the title (to turn into arr) and search if it includes the search input
+  let results = data.filter(elem => elem.title.toLowerCase().includes(srchInput.toLowerCase()))
+  return results
+}
 
 // Create POST controller
-router.get('/', (req, res) => {
-    res.render('results', {data})
+router.post('/', (req, res) => {
+    res.render('results', {data: getDatafromSearch(req.body.search, data)})
 })
+
 // Export module
 module.exports = router

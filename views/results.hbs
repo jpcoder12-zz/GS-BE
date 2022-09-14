@@ -1,14 +1,14 @@
 <div id="header">
       <img id="logo" src="img/google.png" />
       <form id="search">
-        <input type="text" name="input-search" required />
+        <input type="text" name="results-search" />
         <button name="input-search">Search</button>
       </form>
     </div>
 
     <div id="search-results">
       <div>
-        <span id="result-count">37 Results</span>
+        <span id="result-count">{{data.length}} Results</span>
       </div>
       <!-- Result -->
       {{#each data as |element|}}
