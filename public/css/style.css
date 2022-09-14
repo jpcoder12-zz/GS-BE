@@ -88,6 +88,12 @@
     padding-bottom: 30px;
     padding-top: 20px;
   }
+  article > small {
+    display: block
+  }
+  article h2 {
+    display: inline-block;
+  }
   
   /* Results Page Container(s) */
   #header {

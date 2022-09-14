@@ -20,6 +20,22 @@ let data = [
             ]
     },
     {
+        title: 'Wizard101',
+        description: 'A MMORPG made by Kingsisle Entertainment in Austin, TX',
+        url: 'https://www.wizard101.com/',
+        links: 
+            [
+                {
+                    title: 'See the game',
+                    url: 'https://www.wizard101.com/game/see-the-game'
+                }, 
+                {
+                    title: 'Recent Updates',
+                    url: 'https://www.wizard101.com/game/updates'
+                }
+            ]
+    },
+    {
         title: 'Kingdom Hearts',
         description: 'My favorite video game series EVER!',
         url: 'https://www.kingdomhearts.com',
