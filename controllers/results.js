@@ -55,7 +55,7 @@ let data = [
 
 // Create POST controller
 router.get('/', (req, res) => {
-    res.render('results')
+    res.render('results', {data})
 })
 // Export module
 module.exports = router
