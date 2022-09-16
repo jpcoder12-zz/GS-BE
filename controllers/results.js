@@ -23,7 +23,6 @@ router.post('/', async (req, res) => {
     let data = await Results.find({
         title: {$regex: req.body.search, $options: 'i'}
     })
-    console.log(`Data: ${data}`)
 
     res.render('results', {data: data})
     // res.render('results', {data: getDatafromSearch(req.body.search, rawData), 
