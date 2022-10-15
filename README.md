@@ -1,6 +1,6 @@
 # Google Search
 
-Full-stack project by Tortuga Coders
+Full-stack project by Joshua Peoples
 
 ## Installation
 
